@@ -30,9 +30,12 @@ kariyerkocu-ai/
 ├── chroma_software_jobs/  # Vektör veritabanı (otomatik oluşturulur)
 ├── .env                   # GEMINI_API_KEY burada saklanır
 └── requirements.txt       # Bağımlılıklar listesi
+```
 
 ⚙️ Kurulum Rehberi
-1️⃣ Depoyu klonla
+## 1️⃣ Depoyu klonla
+
 ```bash
 git clone https://github.com/<kullaniciadi>/kariyerkocu-ai-akbankbootcamp.git
 cd kariyerkocu-ai-akbankbootcamp
+```
