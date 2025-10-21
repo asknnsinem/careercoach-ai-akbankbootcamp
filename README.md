@@ -36,6 +36,6 @@ kariyerkocu-ai/
 ## 1️⃣ Depoyu klonla
 
 ```bash
-git clone https://github.com/<kullaniciadi>/kariyerkocu-ai-akbankbootcamp.git
+git clone https://github.com/asknnsinem/careercoach-ai-akbankbootcamp.git
 cd kariyerkocu-ai-akbankbootcamp
 ```
