@@ -51,3 +51,23 @@ GEMINI_API_KEY=your_gemini_api_key_here
 streamlit run app.py
 ```
 
+🧩 Çözüm Mimarisi
+```bash
+📄 CV veya metin girişi
+     ↓
+🌍 Çeviri (Türkçe → İngilizce)
+     ↓
+🔍 Embedding çıkarımı
+     ↓
+🧠 Chroma veritabanında benzer ilan arama
+     ↓
+🤖 Gemini API (değerlendirme, özet, skor, öneriler)
+     ↓
+💬 Streamlit arayüzünde sonuçların gösterimi
+RAG mimarisi:
+Retriever → Top-5 ilanları getirir
+Augmenter → Bu ilanları LLM’e (Gemini) gönderir
+Generator → LLM cevabını JSON formatında üretir ve UI’ye döner
+
+```
+
