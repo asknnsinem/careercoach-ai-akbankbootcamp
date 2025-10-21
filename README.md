@@ -67,7 +67,7 @@ streamlit run app.py
 
 ```
 ## 🧠 RAG mimarisi:
-**Retriever → Top-5 ilanları getirir
-**Augmenter → Bu ilanları LLM’e (Gemini) gönderir
-**Generator → LLM cevabını JSON formatında üretir ve UI’ye döner
+- **Retriever** → Top-5 ilanları getirir
+- **Augmenter** → Bu ilanları LLM’e (Gemini) gönderir
+- **Generator** → LLM cevabını JSON formatında üretir ve UI’ye döner
 
