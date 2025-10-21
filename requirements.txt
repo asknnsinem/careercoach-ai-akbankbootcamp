@@ -1,0 +1,27 @@
+# === Core ===
+python-dotenv==1.1.1
+pandas==2.3.3
+streamlit==1.50.0
+protobuf==3.20.3
+
+# === NLP & Transformers ===
+transformers==4.57.1
+sentence-transformers==3.0.1
+datasets==4.2.0
+
+# === LangChain & Vector Store ===
+langchain==0.2.14
+langchain-community==0.4.0
+chromadb==0.5.5
+
+# === Google Gemini ===
+google-generativeai==0.7.2
+
+# === Document Processing ===
+PyMuPDF==1.24.10
+pdf2docx==0.5.8
+python-docx==1.1.2
+
+# === Utilities ===
+tqdm==4.66.4
+requests==2.32.3
