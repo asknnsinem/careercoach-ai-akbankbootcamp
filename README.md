@@ -81,6 +81,36 @@ streamlit run app.py
 - **Augmenter** → Bu ilanları LLM’e (Gemini) gönderir
 - **Generator** → LLM cevabını JSON formatında üretir ve UI’ye döner
 
+## 🧾 Kullanılan Datasetler
+
+### 1️⃣ [LinkedIn Job Postings Dataset](https://huggingface.co/datasets/xanderios/linkedin-job-postings)
+- Kaynak: Hugging Face  
+- İçerik: Gerçek LinkedIn iş ilanlarından toplanan başlık, açıklama, konum ve sektör bilgileri.  
+- Boyut: ~3.2M satır  
+- Kullanım:  
+  - **Yalnızca yazılım geliştirici / mühendislik ilanları** filtrelendi.  
+  - `build_vector_db()` fonksiyonu bu ilanları vektör embedding'e dönüştürerek `Chroma` veritabanına kaydetti.  
+  - RAG pipeline’ı bu ilanları kullanarak kullanıcının CV’sine en benzer 5 ilanı seçiyor.  
+
+---
+
+### 2️⃣ [Sentence-Transformers: Paraphrase Multilingual MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
+- Tür: Çok dilli embedding modeli  
+- Rolü: CV ve iş ilanı metinlerinin **vektör temsillerini** oluşturur  
+- Avantajı: Türkçe dahil 50+ dil desteği  
+- Kullanım: LangChain `HuggingFaceEmbeddings` aracılığıyla çağrılır.  
+
+---
+
+### 3️⃣ [facebook/m2m100_418M](https://huggingface.co/facebook/m2m100_418M)
+- Tür: Çok dilli çeviri modeli  
+- Rolü: Türkçe CV’leri İngilizceye çevirerek Gemini modeline gönderir  
+- Kullanım:  
+  - `translate_to_en()` fonksiyonu içinde çağrılır.  
+  - `src_lang = "tr"` → `en` dönüşümü yapılır.  
+
+---
+
 ## 🌐 Web Arayüzü
 
 Arayüz Özellikleri:
