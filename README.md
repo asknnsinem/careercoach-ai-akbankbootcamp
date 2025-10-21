@@ -39,21 +39,24 @@ kariyerkocu-ai/
 git clone https://github.com/asknnsinem/careercoach-ai-akbankbootcamp.git
 cd kariyerkocu-ai-akbankbootcamp
 ```
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-streamlit run app.py
-```
-
 2️⃣ Ortam Değişkenleri (.env)
 Proje kök dizinine bir .env dosyası oluşturun:
 ```bash
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
-
-3️⃣ Uygulamayı Çalıştırma
+3️⃣ Sanal Ortam Oluşturma
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+4️⃣ Dataset Kurulumu
+```bash
+#data klasörü oluşturulmuş olmalı
+python dataset_download.py
+``` 
+ 
+5️⃣ Uygulamayı Çalıştırma
 ```bash
 streamlit run app.py
 ```
