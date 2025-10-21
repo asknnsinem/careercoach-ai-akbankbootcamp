@@ -3,6 +3,9 @@ from utils import extract_text_from_pdf
 from rag_pipeline import build_vector_db, query_rag
 import os
 
+if not os.path.exists("data/job_postings.csv"):
+    with st.spinner("📦 Dataset indiriliyor..."):
+        import dataset_download
 st.set_page_config(page_title="KariyerKoçu AI", page_icon="💼")
 
 # -------------------------------
