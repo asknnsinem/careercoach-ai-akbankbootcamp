@@ -96,6 +96,21 @@ Arayüz Özellikleri:
 Demo Linki:
 🔗 (örnek) https://careercoach-ai.streamlit.app
 
+## 📊 Örnek Çıktı
+
+🎯 Pozisyon: Yazılım Mühendisi
+📊 Uyum: %82
+🧠 Değerlendirme:
+
+Adayın yazılım geliştirme tecrübesi güçlü. Ancak bulut teknolojileri (AWS, GCP) tarafında daha fazla deneyim kazanması faydalı olur.
+
+💼 Önerilen Pozisyonlar:
+
+Backend Developer
+
+Python Engineer
+
+Full Stack Developer
 
 ## 🏁 Katkıda Bulunanlar
 
