@@ -86,3 +86,11 @@ Arayüz Özellikleri:
 Demo Linki:
 🔗 (örnek) https://careercoach-ai.streamlit.app
 
+
+## 🏁 Katkıda Bulunanlar
+
+Geliştirici:
+- **👤 Sinem Aşkın**
+- **📧 askinnsinem@gmail.com**
+- **🏫 Akbank GenAI Bootcamp — 2025**
+
