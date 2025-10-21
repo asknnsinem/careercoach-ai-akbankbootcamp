@@ -110,6 +110,17 @@ streamlit run app.py
   - `src_lang = "tr"` → `en` dönüşümü yapılır.  
 
 ---
+### 4️⃣ Özel Embedding Dataset (Yerel)
+- Dosya: `data/job_postings.csv`  
+- Tür: Ön işlenmiş, yerel olarak indirilen ilan verisi  
+- İçerik:  
+  - Kolonlar: `title`, `description`  
+  - Filtreleme: `title` içinde “software”, “developer”, “engineer” geçen kayıtlar  
+- Kullanım: Uygulama ilk kez çalıştırıldığında embedding veritabanı (`chroma_software_jobs/`) bu dosyadan oluşturulur.  
+
+---
+
+Bu veri kaynakları sayesinde sistem, hem **gerçekçi iş ilanı bağlamı** hem de **dil bağımsız analiz** yapabilmektedir.
 
 ## 🌐 Web Arayüzü
 
