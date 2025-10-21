@@ -39,3 +39,9 @@ kariyerkocu-ai/
 git clone https://github.com/asknnsinem/careercoach-ai-akbankbootcamp.git
 cd kariyerkocu-ai-akbankbootcamp
 ```
+
+2️⃣ Ortam Değişkenleri (.env)
+Proje kök dizinine bir .env dosyası oluşturun:
+```bash
+GEMINI_API_KEY=your_gemini_api_key_here
+```
