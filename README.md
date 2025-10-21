@@ -64,10 +64,10 @@ streamlit run app.py
 🤖 Gemini API (değerlendirme, özet, skor, öneriler)
      ↓
 💬 Streamlit arayüzünde sonuçların gösterimi
-RAG mimarisi:
+
+```
+--> RAG mimarisi:
 Retriever → Top-5 ilanları getirir
 Augmenter → Bu ilanları LLM’e (Gemini) gönderir
 Generator → LLM cevabını JSON formatında üretir ve UI’ye döner
-
-```
 
