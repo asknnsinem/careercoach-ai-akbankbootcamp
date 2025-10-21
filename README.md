@@ -71,3 +71,18 @@ streamlit run app.py
 - **Augmenter** → Bu ilanları LLM’e (Gemini) gönderir
 - **Generator** → LLM cevabını JSON formatında üretir ve UI’ye döner
 
+## 🌐 Web Arayüzü
+
+Arayüz Özellikleri:
+
+- 📎 PDF CV yükleme veya metin girişi
+
+- 🎯 Hedef pozisyon girme (opsiyonel)
+
+- 🧮 Uygunluk yüzdesi + AI değerlendirmesi
+
+- 🔍 Pozisyon Önerisi
+
+Demo Linki:
+🔗 (örnek) https://careercoach-ai.streamlit.app
+
