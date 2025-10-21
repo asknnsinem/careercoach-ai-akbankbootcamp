@@ -40,6 +40,13 @@ git clone https://github.com/asknnsinem/careercoach-ai-akbankbootcamp.git
 cd kariyerkocu-ai-akbankbootcamp
 ```
 
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run app.py
+```
+
 2️⃣ Ortam Değişkenleri (.env)
 Proje kök dizinine bir .env dosyası oluşturun:
 ```bash
