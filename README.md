@@ -45,3 +45,9 @@ Proje kök dizinine bir .env dosyası oluşturun:
 ```bash
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
+
+3️⃣ Uygulamayı Çalıştırma
+```bash
+streamlit run app.py
+```
+
