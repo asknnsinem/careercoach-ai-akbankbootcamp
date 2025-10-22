@@ -165,17 +165,13 @@ Geliştirici:
 Bu proje geliştirilirken aşağıdaki kaynaklardan yararlanılmıştır:
 
 - [🌐 Gemini API Docs](https://ai.google.dev/gemini-api/docs)  
-  Google’ın Gemini modelleriyle doğal dil işleme ve içerik üretimi entegrasyonu için kullanılmıştır.  
-  CV analizi ve ilan uyumu yorumları Gemini 2.5 Pro modeliyle yapılmıştır.
+
 
 - [🧩 LangChain](https://python.langchain.com/docs/get_started/introduction)  
-  Vektör veritabanı erişimi, embedding işlemleri ve RAG (Retrieval-Augmented Generation) yapısı için kullanılmıştır.
+
 
 - [🤗 Hugging Face Transformers](https://huggingface.co/docs/transformers/index)  
-  Çeviri işlemleri için `facebook/m2m100_418M` modeli kullanılmıştır.  
-  Model, Türkçe → İngilizce dönüşümünde CV metinlerini Gemini’ye uygun hale getirir.
+
 
 - [💾 Chroma Vector DB](https://docs.trychroma.com/)  
-  İş ilanlarının embedding tabanlı vektör temsillerini saklamak ve en benzer ilanları bulmak için kullanılmıştır.  
-  `langchain_community.vectorstores.Chroma` üzerinden projeye entegre edilmiştir.
 
