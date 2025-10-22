@@ -135,7 +135,7 @@ Arayüz Özellikleri:
 - 🔍 Pozisyon Önerisi
 
 Demo Linki:
-🔗 (örnek) https://careercoach-ai.streamlit.app
+🔗 (örnek) https://huggingface.co/spaces/asknnsinem/careercoach-ai
 
 ## 📊 Örnek Çıktı
 
