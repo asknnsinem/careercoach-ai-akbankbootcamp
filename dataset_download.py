@@ -7,7 +7,7 @@ os.makedirs("data", exist_ok=True)
 print("📦 Dataset indiriliyor...")
 
 # Verisetini indir (sadece ilk 3000 kayıt)
-dataset = load_dataset("xanderios/linkedin-job-postings", split="train[:3000]")
+dataset = load_dataset("xanderios/linkedin-job-postings", split="train[:2000]")
 
 # Pandas DataFrame'e dönüştür
 df = pd.DataFrame(dataset)
