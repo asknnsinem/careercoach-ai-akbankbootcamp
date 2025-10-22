@@ -160,3 +160,12 @@ Geliştirici:
 - **📧 askinnsinem@gmail.com**
 - **🏫 Akbank GenAI Bootcamp — 2025**
 
+## 🔗 Kaynaklar
+
+- **Gemini API Docs**
+
+- **LangChain**
+
+- **HuggingFace Transformers**
+
+- **Chroma Vector DB**
