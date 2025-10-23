@@ -32,18 +32,28 @@ def translate_to_en(text: str):
 # 🔹 Vektör veritabanı oluşturma
 # ---------------------------------------------------------
 def build_vector_db():
+    """Tüm ilanlardan embedding tabanı oluşturur (filtre yok)."""
     df = pd.read_csv("data/job_postings.csv")
-    df = df[df["title"].str.contains("software|developer|engineer", case=False, na=False)]
-    df = df[["title", "description"]].dropna()
 
+    # Sadece gerekli sütunları al
+    if "title" in df.columns and "description" in df.columns:
+        df = df[["title", "description"]].dropna()
+    else:
+        raise ValueError(f"⚠️ Beklenen kolonlar bulunamadı. Mevcut kolonlar: {df.columns.tolist()}")
+
+    # İlan metinlerini birleştir
     texts = [f"Title: {t}\nDescription: {d}" for t, d in zip(df["title"], df["description"])]
+
+    # Embedding modeli
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
-    db = Chroma.from_texts(texts, embedding=embeddings, persist_directory="./chroma_software_jobs")
+    # Chroma veritabanını oluştur
+    db = Chroma.from_texts(texts, embedding=embeddings, persist_directory="./chroma_jobs")
     db.persist()
 
     print(f"✅ {len(df)} ilan Chroma veritabanına kaydedildi.")
     return db
+
 
 # ---------------------------------------------------------
 # 🔹 CV Karşılaştırma (Gemini)
