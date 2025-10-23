@@ -87,8 +87,7 @@ streamlit run app.py
 - Kaynak: Hugging Face  
 - İçerik: Gerçek LinkedIn iş ilanlarından toplanan başlık, açıklama, konum ve sektör bilgileri.  
 - Boyut: ~3.2M satır  
-- Kullanım:  
-  - **Yalnızca yazılım geliştirici / mühendislik ilanları** filtrelendi.  
+- Kullanım:    
   - `build_vector_db()` fonksiyonu bu ilanları vektör embedding'e dönüştürerek `Chroma` veritabanına kaydetti.  
   - RAG pipeline’ı bu ilanları kullanarak kullanıcının CV’sine en benzer 5 ilanı seçiyor.  
 
